@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header_row {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: space-between;
+  height: 60px;
+}
+.header_title h1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.header_btn a {
+  font-size: 16px;
+}
+/*# sourceMappingURL=header.css.map */

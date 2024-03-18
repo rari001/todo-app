@@ -1,0 +1,72 @@
+/*===========================================================
+# colors #font
+============================================================*/
+.form a {
+  font-size: 13px;
+  text-align: left;
+  display: inline-block;
+}
+.form_center {
+  text-align: center;
+}
+.form_submit {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 750px;
+}
+
+.form_title {
+  font-size: 24px;
+}
+
+input.text, select.text {
+  width: 100%;
+  margin: 8px 0px;
+  padding: 11px 8px;
+  border: none;
+  border-radius: 8px;
+  background: #ebf5ff;
+}
+
+label {
+  font-size: 12px;
+}
+
+textarea {
+  width: 100%;
+  margin: 8px 0px;
+  padding: 8px 8px;
+  min-height: 440px;
+  resize: vertical;
+  border: 1px solid #EBEBEB;
+}
+
+.btn-primary {
+  background-color: #1D578D;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 14px 0;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: solid 1px #1D578D;
+  width: 100%;
+  text-align: center;
+  color: #1D578D;
+  padding: 16px 0;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.field {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=form.css.map */

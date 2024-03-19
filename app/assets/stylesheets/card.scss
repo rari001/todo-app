@@ -1,27 +1,58 @@
 @import './variables';
 $heart-size: 16px;
-$avatar-size: 32px;
+$avatar-size: 28px;
+.boards {
+  h2 {
+    font-size: 20px;
+  }
+}
 
 .card {
-  background-color: white;
-  margin: 16px 0;
+  background: $base-bg-color;
+  margin: 20px 0;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 30px 20px 20px 20px;
+
+  &_row {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &_title {
-    margin-bottom: 8px;
     h2 {
-      font-size: 22px;
-    }
-    p {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
 
-  &_desc {
-    font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  &_detail_actions {
+    display: flex;
+    font-size: 12px;
+    position: relative;
+
+    img {
+      cursor: pointer;
+      width: $avatar-size;
+      height: $avatar-size;
+      border-radius: 100%;
+    }
+  }
+
+  &_icon {
+    margin-top: 30px;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+
+  &_content {
+    p {
+      font-size: 13px;
+    }
   }
 
   &_heart {
@@ -41,37 +72,4 @@ $avatar-size: 32px;
     }
   }
 
-  &_detail {
-    padding-top: 12px;
-    cursor: pointer;
-    display: flex;
-    font-size: 10px;
-
-    img {
-      width: $avatar-size;
-      height: $avatar-size;
-      border-radius: 100%;
-      margin-right: 8px;
-    }
-  }
-
-  &_content {
-    padding: 16px 16px;
-  }
-
-  &_image {
-    height: 180px;
-    position: relative;
-    overflow: hidden;
-
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100%;
-    }
-  }
 }

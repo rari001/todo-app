@@ -1,5 +1,5 @@
 .container.form
-  %h2.form_title Sign in
+  %h2.form_title サインイン
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .field
       = f.label :email
@@ -11,6 +11,6 @@
       = f.password_field :password, autocomplete: "current-password", class: 'text'
     .form_submit
       .actions
-        = f.submit "Submit", class: 'btn-primary'
+        = f.submit "登録する", class: 'btn-primary'
       .form_center
         = render "devise/shared/links"

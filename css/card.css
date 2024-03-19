@@ -1,0 +1,60 @@
+/*===========================================================
+# colors #font
+============================================================*/
+.boards h2 {
+  font-size: 20px;
+}
+
+.card {
+  background: rgb(241, 245, 247);
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 30px 20px 20px 20px;
+}
+.card_row {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_title h2 {
+  font-size: 17px;
+}
+.card_detail_actions {
+  display: flex;
+  font-size: 12px;
+  position: relative;
+}
+.card_detail_actions img {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+}
+.card_icon {
+  margin-top: 30px;
+}
+.card_icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.card_content p {
+  font-size: 13px;
+}
+.card_heart {
+  display: flex;
+}
+.card_heart img {
+  width: 16px;
+  height: 16px;
+}
+.card_heart span {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1D578D;
+  line-height: 16px;
+}
+/*# sourceMappingURL=card.css.map */

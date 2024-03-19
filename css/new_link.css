@@ -3,15 +3,15 @@
 ============================================================*/
 .new-link_btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 16px;
 }
 
 .fa {
   background: #1D578D;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
   display: inline-block;
   position: relative;
 }
@@ -22,6 +22,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 17px;
 }
 /*# sourceMappingURL=new_link.css.map */

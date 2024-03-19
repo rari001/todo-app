@@ -6,6 +6,10 @@
     display: inline-block;
   }
 
+  h2 {
+    font-size: 20px;
+  }
+
   &_center {
     text-align: center;
   }
@@ -23,14 +27,14 @@
 .form_title {
   font-size: 24px;
 }
-input, select {
+input, textarea, select {
   &.text {
     width: 100%;
     margin: 8px 0px;
     padding: 11px 8px;
     border: none;
     border-radius: 8px;
-    background: #ebf5ff;
+    background: $text-bg-color;
   }
 }
 
@@ -42,7 +46,7 @@ textarea {
   width: 100%;
   margin: 8px 0px;
   padding: 8px 8px;
-  min-height: 440px;
+  min-height: 200px;
   resize: vertical;
   border: 1px solid #EBEBEB;
 }
@@ -56,6 +60,7 @@ textarea {
   padding: 14px 0;
   font-weight: bold;
   border-radius: 4px;
+  margin-top: 20px;
 }
 
 .btn-secondary {

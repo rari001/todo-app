@@ -15,7 +15,16 @@
         .header_row
           .header_title
             %h1= link_to 'Boards', root_path
-          .header_icon
+          - if user_signed_in?
+            .dropdown
+              = image_tag 'card-icon.png', class: 'header_avatar dropbtn'
+              .dropdown-content
+                = link_to 'ログアウト', destroy_user_session_path, data: {method: 'delete'}
+          - else
             .header_btn
-              = link_to 'login', user_session_path
+              = link_to 'ログイン', user_session_path
+    - if flash.present?
+      .flash
+        - flash.each do |key, value|
+          %div{class: key}= value
     = yield

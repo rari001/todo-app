@@ -1,1 +1,8 @@
-ああああああ
+.container.boards
+  %h2 議題リスト
+  - @boards.each do |board|
+    = render 'commons/board', board: board
+  .new-link_btn
+    = link_to new_board_path do
+      %i.fa.fa-plus
+
